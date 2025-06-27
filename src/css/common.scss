@@ -9,16 +9,24 @@
     color: $page-title-color;
 }
 
+.btn{
+    border-radius: $button-radius;
+}
+
 .card {
     // border: 0px solid transparent;
     // box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     // border: 1px solid $card-border-color;
     box-shadow: $card-shadow;
+    border-radius: $card-radius;
+    // padding: 1.5rem;
 
     .card-header {
         background-color: $card-bg-color;
         border-bottom: 0px solid transparent;
         padding: 1rem;
+        border-radius: $card-radius $card-radius 0 0;
+        
 
         .card-title {
             font-size: $title-sub;
@@ -48,6 +56,7 @@
     line-height: 26px;
     font-size: $form-label-font-size;
     line-height: 32px;
+    border-radius: $form-radius;
 
     &::placeholder {
         color: $form-placeholder-color;

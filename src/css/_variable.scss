@@ -20,15 +20,22 @@ $common-font-small: 0.875rem;
 $title-font: 1.5rem;
 $title-sub: 1.255rem;
 
+/* Button Variables */
+$button-radius: 8px;
+
 /* Sidebar Variables */
 $sidebar-width: 70px;
 $sidebar-expanded-width: 250px;
 $sidebar-bg-color: #fff;
 $sidebar-hover-bg-color: #f0f0f0;
 $sidebar-text-color: #515152;
-$sidebar-active-bg-color: #EBF2FF;
-$sidebar-active-text-color: $primary-color;
+$sidebar-active-bg-color: $primary-color;
+$sidebar-active-text-color:#fff ;
 $sidebar-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+/* Header Variables */
+$header-bg-color: rgba(255, 255, 255, 0.95);
+$header-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
 
 /* Card Variables */
 $card-bg-color: #fff;
@@ -37,6 +44,7 @@ $card-title-color: #0f093c;
 $card-text-color: #3d3a58;
 // $card-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 $card-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+$card-radius: 16px;
 
 
 /* Tabs Variables */
@@ -56,12 +64,4 @@ $form-label-color: #3c3c3c;
 $form-control-border-color: rgba(0, 0, 0, 0.5);
 $form-control-focus-border-color: $secondary-color;
 $form-placeholder-color: #919191;
-
-
-
-
-
-
-/* Header Variables */
-$header-bg-color: rgba(255, 255, 255, 0.95);
-$header-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+$form-radius: 14px;
