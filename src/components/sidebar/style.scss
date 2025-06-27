@@ -1,0 +1,108 @@
+@import './../../css/variable.scss';
+
+.sidebar {
+    background-color: $sidebar-bg-color;
+    box-shadow: $sidebar-shadow;
+    max-width: $sidebar-width;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: max-width 0.3s ease-in-out;
+
+    @media screen and (max-width: 901px) {
+        max-width: $sidebar-expanded-width;
+    }
+
+    .comp-logo {
+        padding: 15px;
+        border-bottom: 1px solid $border-color;
+
+        img {
+            max-width: 44px;
+        }
+    }
+}
+
+.nav-open {
+    .sidebar {
+        max-width: $sidebar-expanded-width;
+        width: 100%;
+        transition: max-width 0.3s ease-in-out;
+
+        @media screen and (max-width: 901px) {
+            max-width: 0;
+
+        }
+
+        .sideNav {
+            &.nav {
+                a {
+                    span {
+                        display: inline;
+
+
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+.sideNav {
+    padding-top: 10px;
+    gap: 8px;
+
+    &.nav {
+        a {
+            display: block;
+            padding: 10px 15px;
+            color: $body-text-color;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            // border-bottom: 1px solid $border-color;
+            margin: 0 10px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+
+            span {
+                display: none;
+
+                @media screen and (max-width: 901.98px) {
+
+                    display: inline;
+
+
+                }
+
+            }
+
+            &:hover {
+                // color: $common-text-hover-color;
+                background-color: $sidebar-hover-bg-color;
+            }
+        }
+
+        .active {
+            // color: #4f39f6;
+            background-color: $sidebar-active-bg-color;
+            color: $sidebar-active-text-color;
+
+            &:hover {
+                background-color: $sidebar-active-bg-color;
+                color: $sidebar-active-text-color;
+            }
+        }
+    }
+}
+
+.nav-oepn {}

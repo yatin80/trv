@@ -1,0 +1,73 @@
+@import '../../css/variable';
+
+
+
+.timeline-container {
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding-left: 15px;
+
+    ul {
+        &.tl {
+            margin: 20px 0;
+            padding: 0;
+            display: inline-block;
+
+            li {
+                list-style: none;
+                margin: auto;
+                min-height: 50px;
+                border-left: 1px solid #86D6FF;
+                padding: 0 0 50px 30px;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                &.dashed {
+                    border-left: 1px dashed #86D6FF;
+                }
+
+                &:last-child {
+                    border-left: 0;
+                }
+
+                .item-icon {
+                    position: absolute;
+                    left: -11px;
+                    top: 0px;
+                    content: " ";
+                    border: 8px solid rgba(255, 255, 255, 0.74);
+                    border-radius: 500%;
+                    background: #258CC7;
+                    height: 20px;
+                    width: 20px;
+                }
+
+                &:hover {
+                    &::before {
+                        border-color: #258CC7;
+                        transition: all 1000ms ease-in-out;
+                    }
+                }
+
+                .item-title {
+                    font-weight: 500;
+                    font-size: $common-font-small;
+                    color: #333;
+                }
+
+                .item-timestamp {
+                    color: #8D8D8D;
+                    font-size: 12px;
+
+                }
+            }
+
+        }
+    }
+}
+
+
+

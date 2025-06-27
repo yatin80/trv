@@ -1,0 +1,13 @@
+$theme-colors: (
+  'info': orange,
+  'danger': tomato,
+  'primary': #4f39f6,
+  'secondary': orange,
+  'success': #198754,
+  'warning': #ffc107,
+  'light': #515152,
+  'dark': #212529
+);
+@import './_variable';
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';

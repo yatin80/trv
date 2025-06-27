@@ -1,0 +1,23 @@
+
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "icon": "faHome"
+    },
+    {
+        "name": "Booking",
+        "url": "/booking",
+        "icon": "faTicket"
+    },
+    {
+        "name": "Refund Track",
+        "url": "/refund-track",
+        "icon": "faRoute"
+    },
+    {
+        "name": "Splite Payment",
+        "url": "/splite-payment",
+        "icon": "faMoneyBillTransfer"
+    }
+]

@@ -1,0 +1,106 @@
+@import '../../css/variable';
+
+.friends-list {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .friend-item {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &.payment-done {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .friend-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .friend-name {
+            font-size: $common-font;
+            color: #333;
+        }
+
+        .payment-status {
+            font-size: 14px;
+            color: #6c757d;
+            margin: 0;
+
+            &.paid {
+                color: #28a745;
+            }
+        }
+
+        .trip-amount {
+            font-size: 16px;
+            color: #333;
+            margin-right: 20px;
+            margin-left: auto;
+        }
+
+        .friend-action {
+            button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}
+
+.friends-added-list {
+    display: flex;
+    align-items: center;
+
+    .friend-add-item {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -15px;
+
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        margin: 0 0 0 25px;
+    }
+}

@@ -1,0 +1,74 @@
+@import './../../css/variable.scss';
+
+.header {
+    background-color: $header-bg-color;
+    padding: 8px 20px;
+    box-shadow: $header-shadow;
+    position: fixed;
+    width: calc(100% - 70px);
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+
+    .hamburger {
+        display: inline-block;
+        left: 0;
+        position: relative;
+        top: 0;
+        transition: all .3s ease-in-out 0s;
+        width: 1.625rem;
+        z-index: 999;
+        cursor: pointer;
+
+        .line {
+            background: #000;
+            border-radius: .1875rem;
+            display: block;
+            height: .1875rem;
+            margin-bottom: .375rem;
+            margin-right: auto;
+            margin-top: .375rem;
+            transition: all .3s ease-in-out;
+            border-radius: 4px;
+
+            &:last-child {
+                width: 70%;
+            }
+
+        }
+
+        &:hover {
+            .line {
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .header-profile {
+        padding: 5px;
+        background-color: $left-panel-bg;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+
+        }
+    }
+}
+
+.nav-open .header {
+    width: calc(100% - 250px);
+    @media screen and (max-width: 901.98px) {
+        width: calc(100% - 0px);
+        
+    }
+}

@@ -1,0 +1,67 @@
+/* Common Body Variables */
+$primary-color: #4f39f6;
+$secondary-color: orange;
+
+// $body-background: #F8F9FD;
+$body-background: linear-gradient(135deg, #F8F9FD 11%, #eceefa 61%, #E8E4D8, #FAF2D9);
+
+$common-panel-bg: rgba(255, 255, 255, 0.8);
+$left-panel-bg: #F2F2F2;
+$border-color: #edecf3;
+
+$common-font-family: 'Poppins', sans-serif;
+$body-text-color: #515152;
+$body-text-color-secondary: #6c757d;
+$page-title-color: #0f093c;
+
+
+$common-font: 1rem;
+$common-font-small: 0.875rem;
+$title-font: 1.5rem;
+$title-sub: 1.255rem;
+
+/* Sidebar Variables */
+$sidebar-width: 70px;
+$sidebar-expanded-width: 250px;
+$sidebar-bg-color: #fff;
+$sidebar-hover-bg-color: #f0f0f0;
+$sidebar-text-color: #515152;
+$sidebar-active-bg-color: #EBF2FF;
+$sidebar-active-text-color: $primary-color;
+$sidebar-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+/* Card Variables */
+$card-bg-color: #fff;
+$card-border-color: #0e083c14;
+$card-title-color: #0f093c;
+$card-text-color: #3d3a58;
+// $card-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+$card-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+
+
+/* Tabs Variables */
+$tab-text-color: #6c757d;
+$tab-active-text-color: $primary-color;
+$tab-active-bg-color: $primary-color;
+$tab-active-border-color: $primary-color;
+$tab-hover-text-color: #000;
+$tab-hover-bg-color: $primary-color;
+
+
+$fw-500: 500;
+
+/* Form Variables */
+$form-label-font-size: 14px;
+$form-label-color: #3c3c3c;
+$form-control-border-color: rgba(0, 0, 0, 0.5);
+$form-control-focus-border-color: $secondary-color;
+$form-placeholder-color: #919191;
+
+
+
+
+
+
+/* Header Variables */
+$header-bg-color: rgba(255, 255, 255, 0.95);
+$header-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
